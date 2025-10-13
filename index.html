@@ -28,18 +28,19 @@
         <div class="box-segment only-wide animated bounceOutRight" style="animation-delay: 1800ms;"></div>
         <div class="box-segment only-wide animated bounceOutRight" style="animation-delay: 1700ms;"></div>
     </div>
-    <a id="about-nav-btn" class="nav-btn animated fadeIn" style="animation-delay: 1000ms;">about</a>
-    <a id="work-nav-btn" class="nav-btn animated fadeIn" style="animation-delay: 1000ms;">work</a>
-    <a id="contact-nav-btn" class="nav-btn animated fadeIn" style="animation-delay: 1000ms;">contact</a>
-    <a id="projects-nav-btn" class="nav-btn animated fadeIn" style="animation-delay: 1000ms;">projects</a>
+    
+    <a id="about-nav-btn" class="nav-btn animated fadeIn" style="animation-delay: 1000ms;" onclick="showAbout()">about</a>
+    <a id="work-nav-btn" class="nav-btn animated fadeIn" style="animation-delay: 1000ms;" onclick="showWork()">work</a>
+    <a id="contact-nav-btn" class="nav-btn animated fadeIn" style="animation-delay: 1000ms;" onclick="showContact()">contact</a>
+    <a id="projects-nav-btn" class="nav-btn animated fadeIn" style="animation-delay: 1000ms;" onclick="showProjects()">projects</a>
 
     <div id="middle" class="animated slideInDown" style="animation-delay: 2000ms;">
         <h1>d4rkh45h.</h1> <h2>Developer / Graphic Designer / Human</h2>
         <div id="menu">
-            <a class="menu-item" data-target="about-container">about</a>
-            <a class="menu-item" data-target="work-container">work</a>
-            <a class="menu-item" data-target="contact-container">contact</a>
-            <a class="menu-item" data-target="projects-container">projects</a>
+            <a class="menu-item" data-target="about-container" onclick="showAbout()">about</a>
+            <a class="menu-item" data-target="work-container" onclick="showWork()">work</a>
+            <a class="menu-item" data-target="contact-container" onclick="showContact()">contact</a>
+            <a class="menu-item" data-target="projects-container" onclick="showProjects()">projects</a>
         </div>
         <table>
             <tr>
@@ -56,7 +57,7 @@
     </div>
 
     <div id="projects_container" class="content-container">
-        <div class="close-btn" data-target="projects-container"><i class="fas fa-angle-right"></i></div>
+        <div class="close-btn" data-target="projects-container" onclick="closeProjects()"><i class="fas fa-angle-right"></i></div>
         <h1>projects.</h1>
         <section>
             <h2>my work</h2>
@@ -105,7 +106,7 @@
     </div>
 
     <div id="work_container" class="content-container">
-        <div class="close-btn" data-target="work-container"><i class="fas fa-angle-right"></i></div>
+        <div class="close-btn" data-target="work-container" onclick="closeWork()"><i class="fas fa-angle-right"></i></div>
         <h1>work.</h1>
         <section>
             <h2></h2>
@@ -129,7 +130,7 @@
     </div>
 
     <div id="about_container" class="content-container">
-        <div class="close-btn" data-target="about-container"><i class="fas fa-angle-left"></i></div>
+        <div class="close-btn" data-target="about-container" onclick="closeAbout()"><i class="fas fa-angle-left"></i></div>
         <h1>about.</h1>
         <section>
             <h2>about me</h2>
@@ -161,7 +162,7 @@
     </div>
 
     <div id="contact_container" class="content-container">
-        <div class="close-btn" data-target="contact-container"><i class="fas fa-angle-down"></i></div>
+        <div class="close-btn" data-target="contact-container" onclick="closeContact()"><i class="fas fa-angle-down"></i></div>
         <h1>contact.</h1>
         <section>
             <h2>contact me</h2>
@@ -179,6 +180,7 @@
     <div id="footer">
         made in SPAIN 🇪🇸 <br> <a href="https://d4rkh45h.github.io">d4rkh45h</a> </div>
 
-    <script src="particulas.js"></script> <script src="app.js"></script>       <script src="Index.js" type="text/javascript"></script> </body>
+    <script src="particulas.js"></script> <script src="app.js"></script>       <script src="Index.js" type="text/javascript"></script> 
+</body>
 
 </html>
