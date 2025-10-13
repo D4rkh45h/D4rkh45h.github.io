@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="es"> <!-- Cambiado a español, pero puedes ajustarlo a 'en' si prefieres -->
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Error 404 - Página no encontrada | d4rkh45h</title> <!-- Título personalizado -->
+    <link rel="icon" type="image" href="./assets/favicon.png"> <!-- Mismo favicon de tu portfolio -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Comfortaa:700" rel="stylesheet">
+    <!-- No incluimos jQuery ni otros scripts complejos aquí para mantener la página 404 ligera -->
+
+    <style>
+        /* CSS específico para la página 404 */
+        :root {
+            --primary-color: rgb(255, 50, 50); /* Rojo principal de tu portfolio */
+            --text-color-light: #fff;
+            --bg-gradient-overlay: linear-gradient(0deg, rgba(0,0,0,0.5), rgba(0,0,0,0.5));
+        }
+
+        body {
+            padding: 0px;
+            margin: 0px;
+            background: var(--bg-gradient-overlay), url("https://images.unsplash.com/photo-1491956175078-460aea0914ca?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&w=1550&q=80") center center;
+            background-size: cover;
+            width: 100vw;
+            height: 100vh;
+            overflow: hidden; /* Para mantener la coherencia con tu portfolio */
+            font-family: 'Comfortaa', sans-serif; /* Usamos la misma fuente del título */
+            display: flex; /* Para centrar el contenido */
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            color: var(--text-color-light);
+        }
+
+        .error-container {
+            max-width: 90%;
+            padding: 2rem;
+            background-color: rgba(0, 0, 0, 0.7); /* Fondo semi-transparente */
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+        }
+
+        .error-container h1 {
+            font-size: 8rem; /* Tamaño grande para el 404 */
+            color: var(--primary-color);
+            margin-bottom: 0.5rem;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+        }
+
+        .error-container h2 {
+            font-size: 2.5rem;
+            margin-top: 0;
+            margin-bottom: 2rem;
+        }
+
+        .error-container p {
+            font-size: 1.2rem;
+            line-height: 1.6;
+            margin-bottom: 2.5rem;
+        }
+
+        .error-container a {
+            display: inline-block;
+            font-size: 1.1rem;
+            color: var(--text-color-light);
+            background-color: var(--primary-color);
+            padding: 0.8rem 2rem;
+            border-radius: 50px;
+            text-decoration: none;
+            transition: background-color 0.3s ease-in-out, transform 0.3s ease-in-out;
+            font-weight: bold;
+        }
+
+        .error-container a:hover {
+            background-color: #e02a2a; /* Tono más oscuro al pasar el ratón */
+            transform: translateY(-3px);
+        }
+
+        .footer-404 {
+            position: fixed;
+            bottom: 20px;
+            width: 100%;
+            text-align: center;
+            color: rgba(255, 255, 255, 0.7);
+            font-size: 0.9rem;
+        }
+
+        .footer-404 a {
+            color: var(--primary-color);
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        @media (max-width: 768px) {
+            .error-container h1 {
+                font-size: 6rem;
+            }
+            .error-container h2 {
+                font-size: 2rem;
+            }
+            .error-container p {
+                font-size: 1rem;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="error-container animated fadeIn" style="animation-delay: 0.5s;">
+        <h1 class="animated bounceIn" style="animation-delay: 1s;">404</h1>
+        <h2 class="animated fadeIn" style="animation-delay: 1.5s;">¡Ups! Página no encontrada.</h2>
+        <p class="animated fadeIn" style="animation-delay: 2s;">
+            Parece que te has perdido en el ciberespacio. <br> La página que buscas no existe o se ha movido.
+        </p>
+        <a href="index.html" class="animated pulse infinite" style="animation-delay: 2.5s;">Volver al inicio</a>
+    </div>
+
+    <footer class="footer-404 animated fadeIn" style="animation-delay: 3s;">
+        ¿Necesitas ayuda? Contacta a <a href="mailto:drkhsh8@gmail.com">d4rkh45h</a>.
+        <br>
+        Hecho con ❤️ por <a href="https://thekaushikgoswami.github.io">d4rkh45h</a>.
+    </footer>
+</body>
+
+</html>

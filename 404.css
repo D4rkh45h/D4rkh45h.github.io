@@ -1,0 +1,175 @@
+/* --- Custom Properties (Variables CSS) --- */
+:root {
+    --bg-color-denied: #2b3a50; /* Base de color oscuro ajustado */
+    --text-color-light: #fff;
+    --accent-color-gold: #ffc450; /* Dorado para destacar, ligeramente ajustado */
+    --border-color-light: #fff;
+    --font-family-dosis: "Dosis", sans-serif;
+
+    --anim-duration-sparkle: 1.6s;
+    --anim-duration-spin: 4.5s;
+    --anim-duration-hover: 2s;
+}
+
+/* --- Global / Base Styles --- */
+.particle-background, /* Selector más genérico para el contenedor de partículas */
+.access-denied-page, /* Nuevo nombre para el contenedor principal de la página */
+#tsparticles-background { /* Nuevo ID para el contenedor de tsParticles */
+    width: 100%;
+    height: 100%;
+    margin: 0px !important;
+}
+
+#tsparticles-background { /* Estilos para el fondo de partículas */
+    position: fixed !important;
+    opacity: 0.25; /* Ligeramente diferente */
+    top: 0; /* Asegurar que cubra toda la pantalla */
+    left: 0;
+    z-index: -1; /* Asegurar que esté en el fondo */
+}
+
+.access-denied-page {
+    background: var(--bg-color-denied) !important;
+    display: flex; /* Para centrar el contenido fácilmente */
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh; /* Asegurar que ocupe toda la altura */
+}
+
+.access-denied-page a {
+    text-decoration: none;
+}
+
+/* --- Content Wrapper for Denied Message --- */
+.denied-content-wrapper { /* Nuevo nombre para el wrapper principal */
+    max-width: 420px; /* Ligeramente más ancho */
+    width: 100%;
+    /* height: 390px; Se puede omitir height si el contenido es dinámico */
+    display: block;
+    margin: 0 auto;
+    position: relative;
+    padding: 20px; /* Añadido padding para mejorar espaciado en móviles */
+    box-sizing: border-box; /* Para incluir padding en el width/height */
+    text-align: center; /* Centrar el texto dentro del wrapper */
+    margin-top: 8vh; /* Mantener margen superior */
+}
+
+.access-denied-page h1 {
+    color: var(--text-color-light);
+    font-family: var(--font-family-dosis);
+    font-size: 110px; /* Ligeramente más grande */
+    margin-bottom: 0px;
+    font-weight: 900; /* Ligeramente más negrita */
+    line-height: 1; /* Mejorar espaciado vertical */
+}
+
+.access-denied-page h3 {
+    color: var(--text-color-light);
+    font-size: 20px; /* Ligeramente diferente */
+    line-height: 24px; /* Ligeramente diferente */
+    max-width: 350px; /* Ligeramente diferente */
+    margin: 20px auto 35px auto; /* Ajuste de márgenes */
+    font-family: var(--font-family-dosis);
+    font-weight: 500; /* Ligeramente diferente */
+}
+
+.access-denied-page h3 span {
+    position: relative;
+    width: 70px; /* Ligeramente diferente */
+    display: inline-block;
+}
+
+.access-denied-page h3 span:after {
+    content: "";
+    border-bottom: 3px solid var(--accent-color-gold);
+    position: absolute;
+    left: 0;
+    top: 45%; /* Ligeramente diferente */
+    width: 100%;
+}
+
+/* --- Link Styles --- */
+.action-link { /* Nuevo nombre para el enlace */
+    background: none;
+    color: var(--text-color-light);
+    padding: 13px 0px 11px 0px; /* Ajuste de padding */
+    border: 1px solid var(--border-color-light);
+    outline: none;
+    border-radius: 8px; /* Ligeramente diferente */
+    width: 160px; /* Ligeramente diferente */
+    font-size: 16px; /* Ligeramente diferente */
+    text-align: center;
+    margin: 0 auto;
+    vertical-align: middle;
+    display: block;
+    margin-bottom: 45px; /* Ajuste de margen */
+    margin-top: 30px; /* Ajuste de margen */
+    font-family: var(--font-family-dosis);
+    font-weight: 500; /* Ligeramente diferente */
+    transition: all var(--anim-duration-fast) ease-in-out; /* Añadido transición para todos */
+}
+
+.action-link:hover {
+    color: var(--accent-color-gold);
+    border-color: var(--accent-color-gold);
+    cursor: pointer;
+    opacity: 1;
+}
+
+/* --- Star Animation --- */
+.access-denied-page .stars { /* Selector más específico */
+    animation: sparkle var(--anim-duration-sparkle) infinite ease-in-out alternate;
+}
+
+@keyframes sparkle {
+    0% { opacity: 1; }
+    100% { opacity: 0.2; } /* Ligeramente diferente */
+}
+
+/* --- Astronaut Animation --- */
+#astronaut-figure { /* Nuevo ID para el astronauta */
+    width: 45px; /* Ligeramente diferente */
+    position: absolute;
+    right: 25px; /* Ligeramente diferente */
+    top: 220px; /* Ligeramente diferente */
+    animation: spin var(--anim-duration-spin) infinite linear;
+}
+
+@keyframes spin {
+    0% { transform: rotateZ(0deg); }
+    100% { transform: rotateZ(360deg); }
+}
+
+/* --- Planet Hover Animation (Saturn) --- */
+.saturn-element, /* Nuevo nombre para las clases de saturno */
+.saturn-element-secondary,
+.hover-effect {
+    animation: hover var(--anim-duration-hover) infinite ease-in-out alternate;
+}
+
+@keyframes hover {
+    0% { transform: translateY(4px); } /* Ligeramente diferente */
+    100% { transform: translateY(-4px); } /* Ligeramente diferente */
+}
+
+/* --- Media Queries --- */
+@media (max-width: 600px) {
+    .access-denied-page h1 {
+        font-size: 80px; /* Ligeramente diferente */
+    }
+    .access-denied-page h3 {
+        font-size: 17px; /* Ligeramente diferente */
+        max-width: 220px; /* Ligeramente diferente */
+        margin: 0 auto;
+        line-height: 24px; /* Ligeramente diferente */
+    }
+    .access-denied-page h3 span {
+        width: 65px; /* Ligeramente diferente */
+    }
+    #astronaut-figure {
+        width: 38px; /* Ligeramente diferente */
+        right: 35px; /* Ligeramente diferente */
+        top: 180px; /* Ligeramente diferente */
+    }
+}

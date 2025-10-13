@@ -1,0 +1,406 @@
+/* --- Variables CSS --- */
+:root {
+    --primary-color: rgb(255, 50, 50); /* Rojo principal */
+    --text-color-light: #fff;
+    --bg-gradient-overlay: linear-gradient(0deg, rgba(0,0,0,0.5), rgba(0,0,0,0.5));
+    --animation-duration-fast: 0.4s;
+    --animation-duration-medium: 0.56s;
+}
+
+/* --- Base Styles --- */
+body {
+    padding: 0;
+    margin: 0;
+    background: var(--bg-gradient-overlay), url("https://images.unsplash.com/photo-1491956175078-460aea0914ca?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&w=1550&q=80") center center;
+    background-size: cover;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+/* --- Loading Screen --- */
+#loading {
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    background: var(--primary-color);
+    z-index: 999;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+#spinner {
+    animation: rotate var(--animation-duration-medium) infinite linear;
+    width: 50px;
+    height: 50px;
+    border: 12px solid var(--text-color-light);
+    border-bottom: 12px solid var(--primary-color);
+    border-radius: 50%;
+    margin: 0;
+}
+
+@keyframes rotate {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+/* --- Box Animation --- */
+#box {
+    width: 100vw;
+    height: 100vh;
+    z-index: 9;
+    position: fixed;
+    top: 0;
+}
+
+#box div { /* General styling for box segments */
+    width: 16.66vw;
+    height: 100%;
+    display: inline-block;
+}
+
+.box-segment.only-wide { /* Using the new class from HTML */
+    background: var(--primary-color);
+}
+
+.box-segment:not(.only-wide) { /* Targeting the segments that don't have 'only-wide' */
+    background: var(--primary-color);
+    margin-left: -5px; /* Mantener este margen si es necesario para el diseño original */
+}
+
+/* --- Main Navigation Menu (bottom of middle section) --- */
+#menu {
+    width: 100%;
+    text-align: center;
+    margin: 6vh 0px;
+    display: none; /* Hidden by default for larger screens, shown on mobile */
+}
+
+#menu a.menu-item { /* Specific selector for menu items */
+    margin: 0px 6%;
+    font-size: 19px;
+    color: var(--text-color-light);
+    text-decoration: underline;
+}
+
+/* --- Middle Content Section --- */
+#middle {
+    width: 100vw;
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: fixed;
+    top: 0;
+    text-align: center;
+    z-index: 1;
+    color: var(--text-color-light);
+    padding-bottom: 10vh;
+}
+
+#middle h1 {
+    color: var(--primary-color);
+    font-size: 70px;
+    text-decoration: underline;
+}
+
+/* --- Navigation Buttons (Top, Left, Right, Bottom) --- */
+.nav-btn { /* Common styles for all navigation buttons */
+    width: 10vw;
+    height: 10vw;
+    text-align: center;
+    font-size: 25px;
+    background: transparent;
+    color: var(--text-color-light);
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    z-index: 4;
+    transition: var(--animation-duration-fast) ease-in-out;
+}
+
+#projects-nav-btn {
+    top: 0;
+    right: 45vw;
+    border-radius: 0px 0px 100px 100px;
+}
+
+#about-nav-btn {
+    transform: rotate(-90deg);
+    left: 0;
+    bottom: 40vh;
+    border-radius: 0px 0px 100px 100px; /* Mantener original si la forma lo requiere */
+}
+
+#work-nav-btn {
+    transform: rotate(90deg);
+    right: 0;
+    bottom: 40vh;
+    border-radius: 0px 0px 100px 100px; /* Mantener original si la forma lo requiere */
+}
+
+#contact-nav-btn {
+    bottom: 0;
+    left: 45vw;
+    border-radius: 100px 100px 0px 0px;
+}
+
+/* Hover effects for navigation buttons */
+.nav-btn:hover {
+    background: rgba(255,50,50,0.9); /* Usar directamente rgba para la transparencia */
+    cursor: pointer;
+}
+
+/* --- Social Icons --- */
+#middle table {
+    width: 30%;
+    margin: 6vh auto;
+}
+
+#middle table tr td {
+    text-align: center;
+}
+
+.social-icon { /* Using the new class from HTML */
+    color: var(--text-color-light);
+    font-size: 22px;
+    border-radius: 50%;
+    transition: var(--animation-duration-fast) ease-in-out;
+    margin: 0px 8px;
+    text-align: center;
+}
+
+.social-icon:hover {
+    cursor: pointer;
+    color: var(--primary-color);
+}
+
+/* --- Content Containers (Projects, Work, About, Contact) --- */
+.content-container { /* Using the new class from HTML */
+    width: 90vw;
+    height: 90vh;
+    padding: 5vh 5vw;
+    background: var(--primary-color);
+    color: var(--text-color-light);
+    z-index: 9;
+    position: fixed;
+    max-height: 100vh;
+    overflow-y: auto;
+    display: none;
+}
+
+.content-container .close-btn { /* Styling for the close button within containers */
+    font-size: 25px;
+    margin: 20px 0px;
+    transition: var(--animation-duration-fast) ease-in-out;
+}
+
+.content-container .close-btn:hover {
+    cursor: pointer;
+}
+
+.content-container section {
+    margin: 8vh 0px;
+}
+
+/* --- Specific styling for 'used' section in 'Work' container --- */
+#used .skill-item { /* Using the new class from HTML */
+    font-size: 14px !important;
+    display: inline-block;
+    padding: 8px 10px;
+    border: 2px solid var(--text-color-light);
+    margin: 0px 10px;
+    border-radius: 50px;
+}
+
+#used:hover { /* Consider removing hover on parent if only children are interactive */
+    cursor: text;
+}
+#used .skill-item:hover { /* Maintain text cursor on individual items */
+    cursor: text;
+}
+
+/* --- Headings and Paragraphs within containers --- */
+.content-container h1 {
+    font-size: 60px;
+    text-decoration: underline;
+}
+
+.content-container p {
+    font-size: 21px;
+}
+
+/* --- Buttons --- */
+.btn_primary { /* Using the new class from HTML */
+    font-size: 18px;
+    font-family: 'Josefin Sans', sans-serif;
+    color: var(--text-color-light);
+    background: transparent;
+    border: 3px solid var(--text-color-light);
+    padding: 8px 40px;
+    border-radius: 80px;
+    font-weight: bold;
+    margin: 2vh 10px;
+    transition: var(--animation-duration-fast) ease-in-out;
+}
+
+.btn_primary:hover {
+    cursor: pointer;
+    color: var(--primary-color);
+    background: var(--text-color-light);
+}
+
+/* Nota: el botón .btn_two no existe en el HTML proporcionado. Lo he omitido. */
+/* Si lo necesitas, su estilo original era:
+.btn_two {
+    font-size:18px;
+    font-family: 'Josefin Sans', sans-serif;
+    color: var(--primary-color);
+    background: var(--text-color-light);
+    border:3px solid var(--text-color-light);
+    padding:8px 40px;
+    border-radius:80px;
+    font-weight:bold;
+    margin:2vh 10px;
+    transition: var(--animation-duration-fast) ease-in-out;
+}
+.btn_two:hover {
+    cursor:pointer;
+    padding:8px 60px;
+}
+*/
+
+/* --- Form Styling --- */
+.content-container form input,
+.content-container form textarea {
+    width: 46%; /* 96% para textarea */
+    margin: 20px 1%;
+    background: transparent;
+    border: 0px;
+    border-bottom: 3px solid rgba(255,255,255,0.5); /* Usar rgba directamente */
+    padding: 8px 10px;
+    font-family: 'Poppins', sans-serif; /* Asegúrate de importar Poppins si lo usas aquí */
+    font-size: 18px;
+    transition: var(--animation-duration-fast) ease-in-out;
+    color: var(--text-color-light);
+    font-weight: bold;
+}
+
+.content-container form textarea {
+    width: 96%;
+    resize: none;
+}
+
+.content-container form input:focus,
+.content-container form textarea:focus {
+    outline: none;
+    border-bottom: 3px solid rgba(255, 255, 255, 1);
+}
+
+::placeholder {
+    color: var(--text-color-light);
+}
+
+/* --- Footer --- */
+#footer {
+    color: var(--text-color-light);
+    width: 92vw;
+    padding: 5vh 4vw;
+    text-align: right;
+    position: fixed;
+    z-index: 1;
+    bottom: 0;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+#footer a {
+    color: var(--primary-color);
+}
+
+/* --- Particles JS Canvas --- */
+#particulas-js { /* Renombrado para coincidir con el HTML */
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    top: 0; /* Asegurar que cubra toda la pantalla */
+    left: 0; /* Asegurar que cubra toda la pantalla */
+    z-index: 0; /* Asegurar que esté por debajo del resto del contenido */
+}
+
+/* --- Scrollbar Styling --- */
+::-webkit-scrollbar {
+    width: 5px;
+    height: 5px;
+}
+
+::-webkit-scrollbar-track {
+    background: var(--text-color-light);
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--primary-color);
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: rgba(255, 50, 50,0.8);
+}
+
+/* --- Selection Color --- */
+::selection {
+	color: var(--text-color-light);
+	background: var(--primary-color);
+}
+
+/* --- Media Queries (Responsive Design) --- */
+@media (max-width: 800px) {
+    /* Ocultar los botones de navegación laterales */
+    .nav-btn { /* Usando la clase común */
+        display: none;
+    }
+
+    #footer {
+        text-align: center;
+    }
+
+    #middle {
+        width: 90vw;
+        padding: 0px 5vw;
+    }
+
+    #middle table {
+        width: 80%;
+    }
+
+    .content-container form input,
+    .content-container form textarea {
+        width: 90%;
+        margin: 20px 5%; /* Ajuste de margen para centrar mejor */
+    }
+    .content-container form textarea {
+        width: 90%; /* Asegurar que textarea también ocupe 90% */
+    }
+
+
+    #menu { /* Mostrar el menú de texto en pantallas pequeñas */
+        display: inline-block;
+    }
+
+    /* .onlywide se ha reemplazado por .box-segment.only-wide en el HTML. */
+    /* Este selector debería usarse con 'only-wide' para mantener la lógica original. */
+    .box-segment.only-wide { /* Selector para ocultar los segmentos solo anchos en móvil */
+        display: none !important;
+    }
+
+    .box-segment { /* Ajustar el margen de los segmentos de la caja para móvil */
+        margin-left: 0px !important;
+    }
+
+    #box div { /* Cada segmento de caja ocupa todo el ancho en móvil */
+        width: 100%;
+    }
+}
