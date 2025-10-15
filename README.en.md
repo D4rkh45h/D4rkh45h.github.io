@@ -1,98 +1,88 @@
-<p style="text-align: right; margin-bottom: 20px;">
+[![Category](https://img.shields.io/badge/Category-Cybersecurity-blue.svg?style=flat-square)](https://github.com/topics/cybersecurity)
+[![Topic](https://img.shields.io/badge/Topic-Pentesting-green.svg?style=flat-square)](https://github.com/topics/penetration-testing)
+[![Topic](https://img.shields.io/badge/Topic-Ethical_Hacking-darkgreen.svg?style=flat-square)](https://github.com/topics/ethical-hacking)
+[![Focus](https://img.shields.io/badge/Focus-Offensive_Security-yellow.svg?style=flat-square)](https://github.com/topics/offensive-security)
+[![Learning](https://img.shields.io/badge/Learning-OSCP_Journey-red.svg?style=flat-square)](https://www.offensive-security.com/pwk-oscp/)
+[![Type](https://img.shields.io/badge/Type-Portfolio-purple.svg?style=flat-square)](https://github.com/topics/portfolio)
+[![Tools](https://img.shields.io/badge/Tools-Nmap%2C_Metasploit%2C_BurpSuite-lightgrey.svg?style=flat-square)](https://github.com/topics/security-tools)
+[![Methodology](https://img.shields.io/badge/Methodology-Vulnerability_Analysis-orange.svg?style=flat-square)](https://github.com/topics/vulnerability-analysis)
+[![Platform](https://img.shields.io/badge/Platform-Linux%2C_Kali-black.svg?style=flat-square)](https://github.com/topics/linux)
+[![Language](https://img.shields.io/badge/Language-Python-informational.svg?style=flat-square)](https://github.com/topics/python)
+[![Concept](https://img.shields.io/badge/Concept-Network_Security-blueviolet.svg?style=flat-square)](https://github.com/topics/network-security)
+[![Field](https://img.shields.io/badge/Field-Digital_Forensics-darkblue.svg?style=flat-square)](https://github.com/topics/digital-forensics)
 
-  <!-- Spanish Flag for Spanish version -->
-  <a href="README.md" style="text-decoration: none; margin-left: 10px;" title="Español">
-    <img src="https://flagpedia.net/data/flags/w1600/es.png" alt="Español" width="30">
-  </a>
-  <!-- US Flag for English version -->
-  <a href="README.en.md" style="text-decoration: none; margin-left: 10px;" title="English">
-    <img src="https://flagpedia.net/data/flags/w1600/us.png" alt="English" width="30">
-  </a>
-</p>
+<div align="center">
+  <div style="display: inline-flex; align-items: center; gap: 8px; margin-bottom: 25px; padding-top: 10px;">
+    <a href="README.md" style="text-decoration: none; display: inline-flex; align-items: center; gap: 8px; margin-right: 8px;" title="Español">
+      <img src="https://flagpedia.net/data/flags/w1600/es.png" alt="Español" width="36" style="vertical-align: middle;">
+      <span style="color: grey; font-size: 18px; font-weight: 600; font-family: sans-serif;">  Español</span>
+    </a>
+    <span style="color: grey; font-size: 18px; font-family: sans-serif; margin-right: 8px;">|</span>
+    <a href="README.en.md" style="text-decoration: none; display: inline-flex; align-items: center; gap: 8px;" title="English">
+      <img src="https://flagpedia.net/data/flags/w1600/us.png" alt="English" width="36" style="vertical-align: middle;">
+      <span style="color: deepskyblue; font-size: 18px; font-family: sans-serif; text-decoration: underline;">  English</span>
+    </a>
+  </div>
+</div>
 
-# YourToolName 🚀
+# D4rkh45h Portfolio 🚀
 
-![Tool Logo](URL_OF_YOUR_TOOL_LOGO_HERE) 
-<!-- If you don't have a logo, you can remove the line above or use a generic icon. -->
+Explore my portfolio to delve into the world of offensive cybersecurity. I'm D4rkh45h, a consultant passionate about Pentesting and Ethical Hacking. Here you'll find a showcase of my projects and skills, where I combine my background in systems and development to identify vulnerabilities and strengthen security. Discover how I put digital defenses to the test!
 
-A brief one or two-sentence description of what your tool does and its purpose.
-For example: "An open-source tool to automate OSINT information gathering from social networks."
-
-<h2 align="center">Demonstration</h2>
+<h2 align="center">Demo</h2>
 
 <p align="center">
-  Here you can see the tool in action through GIFs and screenshots.
+  Here you can see the portfolio in action through GIFs and screenshots.
 </p>
 
-### Tool in Action GIF
+### Portfolio in Action GIF
 
 <p align="center">
-  <img src="URL_OF_YOUR_GIF_HERE" alt="GIF Demonstration" style="max-width: 100%; height: auto; display: block; margin: 0 auto;">
-  <em>A quick demonstration of the tool's main workflow, showcasing its key features.</em>
+  <img src="/assets/img/gif1.gif" alt="Demo GIF" style="max-width: 100%; height: auto; display: block; margin: 0 auto;">
+  <em>A quick demonstration of the portfolio's workflow, showcasing its key features.</em>
 </p>
 
 ### Key Screenshots
 
 <p align="center">
-  <img src="URL_OF_YOUR_PHOTO_1_HERE" alt="Screenshot 1" style="max-width: 100%; height: auto; display: block; margin: 0 auto;">
-  <em>Description of what is shown in the first screenshot, for example: "View of the main interface with loaded results."</em>
+  <img src="/assets/img/foto1.png" alt="Screenshot 1" style="max-width: 100%; height: auto; display: block; margin: 0 auto;">
+  <em>Portfolio's home page.</em>
 </p>
 
 <p align="center">
-  <img src="URL_OF_YOUR_PHOTO_2_HERE" alt="Screenshot 2" style="max-width: 100%; height: auto; display: block; margin: 0 auto;">
-  <em>Description of what is shown in the second screenshot, for example: "Configuration and customization options."</em>
+  <img src="/assets/img/foto2.png" alt="Screenshot 2" style="max-width: 100%; height: auto; display: block; margin: 0 auto;">
+  <em>Portfolio's Projects page.</em>
 </p>
 
 <p align="center">
-  <img src="URL_OF_YOUR_PHOTO_3_HERE" alt="Screenshot 3" style="max-width: 100%; height: auto; display: block; margin: 0 auto;">
-  <em>Description of what is shown in the third screenshot, for example: "Example of a report generated by the tool."</em>
+  <img src="/assets/img/foto3.png" alt="Screenshot 3" style="max-width: 100%; height: auto; display: block; margin: 0 auto;">
+  <em>Portfolio's About Me page.</em>
+</p>
+
+<p align="center">
+  <img src="/assets/img/foto4.png" alt="Screenshot 4" style="max-width: 100%; height: auto; display: block; margin: 0 auto;">
+  <em>Portfolio's Contact page.</em>
 </p>
 
 ---
-
-## Features
-
-*   List the main functionalities of your tool.
-*   Be concise but descriptive.
-*   Example: Support for multiple platforms (Linux, Windows, macOS).
-*   Example: Intuitive command-line interface.
-*   Example: Exporting results to different formats (CSV, JSON).
-
 ## Project Structure
 
-This repository contains the **CySortify** tool and its associated files.
+This repository contains my portfolio.
 ```bash
-Tool/
-├── file
-├── File
-├── File
-└── File
+Portfolio/
+├── .github
+├── assets
+├── index.html
+└── index.css
 ```
-
 ---
-
 ## Additional Documentation
 
 Here you will find more detailed information about the project:
 
-*   🤝 [**Code of Conduct**](.github/CODIGO_DE_CONDUCTA.md) - Rules for a respectful community.
-*   📬 [**How to Contribute**](.github/COMO_CONTRIBUIR.md) - Steps to collaborate with the project.
-*   🔐 [**Security**](.github/SEGURIDAD.md) - Information on how to report vulnerabilities.
-*   ⚠️ [**Legal Notice**](.github/AVISO_LEGAL.md) - Important legal clauses and disclaimers.
-*   📢 [**Support**](.github/SOPORTE.md) - Where to get help or ask questions.
+*   🤝 [**Code of Conduct**](.github/CODE_OF_CONDUCT.md) - Rules for a respectful community.
+*   📬 [**How to Contribute**](.github/HOW_TO_CONTRIBUTE.md) - Steps to collaborate with the project.
+*   🔐 [**Security**](.github/SECURITY.md) - Information on how to report vulnerabilities.
+*   ⚠️ [**Legal Notice**](.github/LEGAL_NOTICE.md) - Important legal clauses and warnings.
+*   📢 [**Support**](.github/SUPPORT.md) - Where to get help or ask questions.
 
----
-
-## Usage
-
-Explain how to use your tool. Provide clear examples and commands.
-
-```bash
-# To view available options
-python main_script_name.py --help
-
-# A basic usage example
-python main_script_name.py --target example.com --mode fast_scan
-
-# Another example
-python main_script_name.py --input domain_list.txt --output results.json
