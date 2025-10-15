@@ -1,11 +1,12 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>d4rkh45h | portfolio</title> <link rel="icon" type="image" href="./assets/favicon.png">
+    <title>D4rkh45h | Portafolio</title>
+    <link rel="icon" type="image" href="./assets/favicon.png">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
     <link href="https://fonts.googleapis.com/css?family=Comfortaa:700" rel="stylesheet">
     <script src="https://code.jquery.com/jquery-3.3.1.min.js"
@@ -19,7 +20,7 @@
     <div id="loading">
         <div id="spinner"></div>
     </div>
-    <div id="particulas-js"></div> 
+    <div id="particulas-js"></div>
     <div id="box">
         <div class="box-segment only-wide animated bounceOutLeft" style="animation-delay: 1700ms;"></div>
         <div class="box-segment only-wide animated bounceOutLeft" style="animation-delay: 1800ms;"></div>
@@ -28,20 +29,20 @@
         <div class="box-segment only-wide animated bounceOutRight" style="animation-delay: 1800ms;"></div>
         <div class="box-segment only-wide animated bounceOutRight" style="animation-delay: 1700ms;"></div>
     </div>
-    
-    <a id="about-nav-btn" class="nav-btn animated fadeIn" style="animation-delay: 1000ms;" onclick="showAbout()">about</a>
-    <a id="work-nav-btn" class="nav-btn animated fadeIn" style="animation-delay: 1000ms;" onclick="showWork()">work</a>
-    <a id="contact-nav-btn" class="nav-btn animated fadeIn" style="animation-delay: 1000ms;" onclick="showContact()">contact</a>
-    <a id="projects-nav-btn" class="nav-btn animated fadeIn" style="animation-delay: 1000ms;" onclick="showProjects()">projects</a>
+
+    <a id="about-nav-btn" class="nav-btn animated fadeIn" style="animation-delay: 1000ms;" onclick="showAbout()">sobre mí</a>
+    <a id="work-nav-btn" class="nav-btn animated fadeIn" style="animation-delay: 1000ms;" onclick="showWork()">experiencia</a>
+    <a id="contact-nav-btn" class="nav-btn animated fadeIn" style="animation-delay: 1000ms;" onclick="showContact()">contacto</a>
+    <a id="projects-nav-btn" class="nav-btn animated fadeIn" style="animation-delay: 1000ms;" onclick="showProjects()">proyectos</a>
 
     <div id="middle" class="animated slideInDown" style="animation-delay: 2000ms;">
-        <h1>d4rkh45h.</h1> <h2>
-cybersecurity consultant</h2>
+        <h1>D4rkh45h.</h1>
+        <h2>Consultor de Ciberseguridad</h2>
         <div id="menu">
-            <a class="menu-item" data-target="about-container" onclick="showAbout()">about</a>
-            <a class="menu-item" data-target="work-container" onclick="showWork()">work</a>
-            <a class="menu-item" data-target="contact-container" onclick="showContact()">contact</a>
-            <a class="menu-item" data-target="projects-container" onclick="showProjects()">projects</a>
+            <a class="menu-item" data-target="about-container" onclick="showAbout()">sobre mí</a>
+            <a class="menu-item" data-target="work-container" onclick="showWork()">experiencia</a>
+            <a class="menu-item" data-target="contact-container" onclick="showContact()">contacto</a>
+            <a class="menu-item" data-target="projects-container" onclick="showProjects()">proyectos</a>
         </div>
         <table>
             <tr>
@@ -57,113 +58,118 @@ cybersecurity consultant</h2>
 
     <div id="projects_container" class="content-container">
         <div class="close-btn" data-target="projects-container" onclick="closeProjects()"><i class="fas fa-angle-right"></i></div>
-        <h1>projects.</h1>
+        <h1>Proyectos.</h1>
         <section>
-            <h2>my work</h2>
+            <h2>Mi trabajo</h2>
             <p>
-                Here are some of the projects I've worked on recently. Feel free to explore:
+                Aquí se encuentran algunos de los proyectos que he creado recientemente:
             </p>
             <ul>
                 <div class="project-card-item">
                     <div class="project-info">
-                        <h3>Portfolio</h3>
-                        <p>"A portfolio where you can explore and get to know some of my skills and strengths."</p>
+                        <h3>Portafolio</h3>
+                        <p>"En este portafolio podrás explorar y ver cosas sobre mis habilidades y mis puntos fuertes."</p>
                         <button class="btn_primary"><a
                                 href="https://github.com/D4rkh45h/D4rkh45h.github.io"
-                                style="color: inherit; text-decoration: none" target="_blank"> View Project </a></button>
+                                style="color: inherit; text-decoration: none" target="_blank"> Ver Proyecto </a></button>
                     </div>
                 </div>
                 <div class="project-card-item">
                     <div class="project-info">
                         <h3>Deskmate</h3>
-                        <p>DeskMate is a tool designed to automatically keep your desktop organized. It classifies and moves files into predefined folders based on their type, and logs all these actions in a text file (`log`) so you always have a detailed history of your workspace organization.
+                        <p>
+                            Esta es una herramienta que he creado que se utiliza para organizar el escritorio de una manera sencilla y rápida, con un solo click.
                         </p>
                         <button class="btn_primary"><a href="https://github.com/D4rkh45h/DeskMate/tree/main"
-                                style="color: inherit; text-decoration: none" target="_blank"> View Project </a></button>
+                                style="color: inherit; text-decoration: none" target="_blank"> Ver Proyecto </a></button>
                     </div>
-                </div> 
+                </div>
             </ul>
         </section>
     </div>
 
+    <!-- Contenedor de "Experiencia" comentado para usarlo más tarde -->
+    <!--
     <div id="work_container" class="content-container">
         <div class="close-btn" data-target="work-container" onclick="closeWork()"><i class="fas fa-angle-right"></i></div>
-        <h1>work.</h1>
+        <h1>Experiencia.</h1>
         <section>
             <h2></h2>
             <p>
-                Welcome! I'm [Tu Nombre], an aspiring cybersecurity professional passionate about Ethical Hacking,
-                Network Security, and Digital Forensics. 
-                With hands-on experience through personal projects and practical labs,
-                I develop innovative solutions to identify vulnerabilities and enhance system security. 
-                Let's collaborate to create secure and reliable digital environments.
-                Explore my portfolio for projects and connect to discuss cybersecurity challenges.
+                ¡Bienvenido! Soy D4rkh45h, un aspirante a profesional de la ciberseguridad apasionado por el Hacking Ético,
+                la Seguridad de Redes y la Informática Forense.
+                Con experiencia práctica a través de proyectos personales y laboratorios,
+                desarrollo soluciones innovadoras para identificar vulnerabilidades y mejorar la seguridad de los sistemas.
+                Colaboremos para crear entornos digitales seguros y fiables.
+                Explora mi portafolio para ver proyectos y conecta para discutir desafíos de ciberseguridad.
             </p>
             <div id="used">
-                <div class="skill-item"><i class="fas fa-circle"></i>&nbsp;Ethical Hacking</div>
-                <div class="skill-item"><i class="fas fa-circle"></i>&nbsp;Network Security</div>
-                <div class="skill-item"><i class="fas fa-circle"></i>&nbsp;Python Programming</div>
-                <div class="skill-item"><i class="fas fa-circle"></i>&nbsp;Vulnerability Analysis</div>
+                <div class="skill-item"><i class="fas fa-circle"></i>&nbsp;Hacking Ético</div>
+                <div class="skill-item"><i class="fas fa-circle"></i>&nbsp;Seguridad de Redes</div>
+                <div class="skill-item"><i class="fas fa-circle"></i>&nbsp;Programación Python</div>
+                <div class="skill-item"><i class="fas fa-circle"></i>&nbsp;Análisis de Vulnerabilidades</div>
             </div>
             <button class="btn_primary"><a href="./assets/D4rkh45h_Resume.pdf" target="_blank"
-                    style="color: inherit; text-decoration: none">View
-                    Resume</a></button>
+                    style="color: inherit; text-decoration: none">Ver
+                    Currículum</a></button>
         </section>
     </div>
+    -->
 
     <div id="about_container" class="content-container">
         <div class="close-btn" data-target="about-container" onclick="closeAbout()"><i class="fas fa-angle-left"></i></div>
-        <h1>about.</h1>
+        <h1>Sobre mí.</h1>
         <section>
-            <h2>about me</h2>
+            <h2>Sobre mí</h2>
             <p>
-              Hello there! I'm D4rkh45h, an offensive security professional with a clear goal:
-                to achieve the OSCP certification and build a career in the sector.
-                My foundation is dual: Microcomputer Systems and Networks
-                (SMR) and Multiplatform Application Development (DAM).
+                ¡Hola! Soy D4rkh45h, un profesional de la seguridad ofensiva con un objetivo claro:
+                lograr la certificación OSCP y construir una carrera en el sector.
+                Mi formación es dual: Sistemas Microinformáticos y Redes
+                (SMR) y Desarrollo de Aplicaciones Multiplataforma (DAM).
             </p>
             <p>
-                This combination gives me a unique advantage: I can build robust applications and, more importantly,
-                identify and exploit vulnerabilities from the attacker's perspective. I am constantly training in
-                Pentesting and Ethical Hacking, focused on practical exploitation methodologies 
-                for the Offensive Security certification.
+                Esta combinación me da una ventaja única: puedo construir aplicaciones robustas y, lo que es más importante,
+                identificar y explotar vulnerabilidades desde la perspectiva del atacante. Estoy constantemente formándome en
+                Pentesting y Hacking Ético, enfocado en metodologías de explotación prácticas
+                para la certificación de Offensive Security.
             </p>
             <p>
-                If you are looking for a profile that understands the architecture of systems and networks from the inside out,
-                and knows how to put their defenses to the test, you have come to the right place.
+                Si buscas un perfil que entienda la arquitectura de sistemas y redes desde dentro,
+                y sepa cómo poner a prueba sus defensas, has llegado al lugar adecuado.
             </p>
 
         </section>
         <section>
-            <h2>skills</h2>
+            <h2>Habilidades</h2>
             <p>
-                pentesting, ethical hacking, vulnerability analysis, hardening, linux (kali), python, c++, javascript, mysql/sql, networking, nmap, metasploit, burp suite, docker
+                pentesting, hacking ético, análisis de vulnerabilidades, hardening, linux (kali), python, c++, javascript, mysql/sql, redes, nmap, metasploit, burp suite, docker
             </p>
         </section>
     </div>
 
     <div id="contact_container" class="content-container">
         <div class="close-btn" data-target="contact-container" onclick="closeContact()"><i class="fas fa-angle-down"></i></div>
-        <h1>contact.</h1>
+        <h1>Contacto.</h1>
         <section>
-            <h2>contact me</h2>
+            <h2>Contáctame</h2>
             <p>
             <form action="https://api.web3forms.com/submit" method="POST" class="formcarry-form">
                 <input type="hidden" name="apikey" value="4affcae2-5b2f-4493-9a65-a5af2eda10cf">
-                 <input name="name" type="text" placeholder="name" required />
-                 <input name="email" type="email" placeholder="email" required /><br>
-                <textarea name="message" placeholder="your message" required rows="5"></textarea><br>
-                <button type="submit" class="btn_primary">send</button> 
+                 <input name="name" type="text" placeholder="nombre" required />
+                 <input name="email" type="email" placeholder="correo electrónico" required /><br>
+                <textarea name="message" placeholder="tu mensaje" required rows="5"></textarea><br>
+                <button type="submit" class="btn_primary">Enviar</button>
             </form>
             </p>
         </section>
     </div>
 
     <div id="footer">
-        made in SPAIN 🇪🇸 <br> <a href="https://d4rkh45h.github.io">d4rkh45h</a> </div>
+        Hecho en España 🇪🇸 <br> <a href="https://d4rkh45h.github.io">d4rkh45h</a> </div>
 
-    <script src="particulas.js"></script> <script src="app.js"></script>       <script src="Index.js" type="text/javascript"></script> 
+    <script src="particulas.js"></script>
+    <script src="app.js"></script>
+    <script src="Index.js" type="text/javascript"></script>
 </body>
 
 </html>
-
