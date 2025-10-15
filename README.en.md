@@ -1,15 +1,6 @@
 [![Category](https://img.shields.io/badge/Category-Cybersecurity-blue.svg?style=flat-square)](https://github.com/topics/cybersecurity)
-[![Topic](https://img.shields.io/badge/Topic-Pentesting-green.svg?style=flat-square)](https://github.com/topics/penetration-testing)
-[![Topic](https://img.shields.io/badge/Topic-Ethical_Hacking-darkgreen.svg?style=flat-square)](https://github.com/topics/ethical-hacking)
-[![Focus](https://img.shields.io/badge/Focus-Offensive_Security-yellow.svg?style=flat-square)](https://github.com/topics/offensive-security)
 [![Learning](https://img.shields.io/badge/Learning-OSCP_Journey-red.svg?style=flat-square)](https://www.offensive-security.com/pwk-oscp/)
-[![Type](https://img.shields.io/badge/Type-Portfolio-purple.svg?style=flat-square)](https://github.com/topics/portfolio)
-[![Tools](https://img.shields.io/badge/Tools-Nmap%2C_Metasploit%2C_BurpSuite-lightgrey.svg?style=flat-square)](https://github.com/topics/security-tools)
-[![Methodology](https://img.shields.io/badge/Methodology-Vulnerability_Analysis-orange.svg?style=flat-square)](https://github.com/topics/vulnerability-analysis)
-[![Platform](https://img.shields.io/badge/Platform-Linux%2C_Kali-black.svg?style=flat-square)](https://github.com/topics/linux)
-[![Language](https://img.shields.io/badge/Language-Python-informational.svg?style=flat-square)](https://github.com/topics/python)
-[![Concept](https://img.shields.io/badge/Concept-Network_Security-blueviolet.svg?style=flat-square)](https://github.com/topics/network-security)
-[![Field](https://img.shields.io/badge/Field-Digital_Forensics-darkblue.svg?style=flat-square)](https://github.com/topics/digital-forensics)
+[![Portfolio](https://img.shields.io/badge/Type-Portfolio-purple.svg?style=flat-square)](https://github.com/topics/portfolio)
 
 <div align="center">
   <div style="display: inline-flex; align-items: center; gap: 8px; margin-bottom: 25px; padding-top: 10px;">
