@@ -1,11 +1,6 @@
 [![Category](https://img.shields.io/badge/Category-Cybersecurity-blue.svg?style=flat-square)](https://github.com/topics/cybersecurity)
-[![Category](https://img.shields.io/badge/Content-Writeups-orange.svg?style=flat-square)](https://github.com/topics/writeups)
-[![Topic](https://img.shields.io/badge/Topic-Pentesting-green.svg?style=flat-square)](https://github.com/topics/penetration-testing)
-[![Topic](https://img.shields.io/badge/Topic-Infosec-informational.svg?style=flat-square)](https://github.com/topics/infosec)
-[![Category](https://img.shields.io/badge/Type-CTF-purple.svg?style=flat-square)](https://github.com/topics/ctf)
 [![Learning](https://img.shields.io/badge/Learning-OSCP_Journey-red.svg?style=flat-square)](https://www.offensive-security.com/pwk-oscp/)
-[![Powered By](https://img.shields.io/badge/Powered_By-Jekyll-lightgrey.svg?style=flat-square)](https://jekyllrb.com/)
-[![Focus](https://img.shields.io/badge/Focus-Vulnerability_Research-yellow.svg?style=flat-square)]
+[![Portfolio](https://img.shields.io/badge/Type-Portfolio-purple.svg?style=flat-square)](https://github.com/topics/portfolio)
 
 <div align="center">
   <div style="display: inline-flex; align-items: center; gap: 8px; margin-bottom: 25px; padding-top: 10px;">
