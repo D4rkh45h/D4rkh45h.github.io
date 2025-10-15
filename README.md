@@ -1,21 +1,29 @@
-<p style="text-align: right; margin-bottom: 20px;">
-  <!-- Bandera de Estados Unidos para inglés -->
-  <a href="README.en.md" style="text-decoration: none; margin-left: 10px;" title="English">
-    <img src="https://flagpedia.net/data/flags/w1600/us.png" alt="English" width="30">
-  </a>
-  <!-- Bandera de España para español -->
-  <a href="README.md" style="text-decoration: none; margin-left: 10px;" title="Español">
-    <img src="https://flagpedia.net/data/flags/w1600/es.png" alt="Español" width="30">
-  </a>
-</p>
+[![Category](https://img.shields.io/badge/Category-Cybersecurity-blue.svg?style=flat-square)](https://github.com/topics/cybersecurity)
+[![Category](https://img.shields.io/badge/Content-Writeups-orange.svg?style=flat-square)](https://github.com/topics/writeups)
+[![Topic](https://img.shields.io/badge/Topic-Pentesting-green.svg?style=flat-square)](https://github.com/topics/penetration-testing)
+[![Topic](https://img.shields.io/badge/Topic-Infosec-informational.svg?style=flat-square)](https://github.com/topics/infosec)
+[![Category](https://img.shields.io/badge/Type-CTF-purple.svg?style=flat-square)](https://github.com/topics/ctf)
+[![Learning](https://img.shields.io/badge/Learning-OSCP_Journey-red.svg?style=flat-square)](https://www.offensive-security.com/pwk-oscp/)
+[![Powered By](https://img.shields.io/badge/Powered_By-Jekyll-lightgrey.svg?style=flat-square)](https://jekyllrb.com/)
+[![Focus](https://img.shields.io/badge/Focus-Vulnerability_Research-yellow.svg?style=flat-square)]
 
-# NombreDeTuHerramienta 🚀
+<div align="center">
+  <div style="display: inline-flex; align-items: center; gap: 8px; margin-bottom: 25px; padding-top: 10px;">
+    <a href="README.md" style="text-decoration: none; display: inline-flex; align-items: center; gap: 8px; margin-right: 8px;" title="Español">
+      <img src="https://flagpedia.net/data/flags/w1600/es.png" alt="Español" width="36" style="vertical-align: middle;">
+      <span style="color: white; font-size: 18px; font-weight: 600; font-family: sans-serif;">  Español</span>
+    </a>
+    <span style="color: grey; font-size: 18px; font-family: sans-serif; margin-right: 8px;">|</span>
+    <a href="README.en.md" style="text-decoration: none; display: inline-flex; align-items: center; gap: 8px;" title="English">
+      <img src="https://flagpedia.net/data/flags/w1600/us.png" alt="English" width="36" style="vertical-align: middle;">
+      <span style="color: deepskyblue; font-size: 18px; font-family: sans-serif; text-decoration: underline;">  English</span>
+    </a>
+  </div>
+</div>
 
-![Logo de la Herramienta](URL_DEL_LOGO_DE_TU_HERRAMIENTA_AQUI) 
-<!-- Si no tienes un logo, puedes eliminar la línea anterior o usar un icono genérico. -->
+# Portfolio D4rkh45h 🚀
 
-Una breve descripción de una o dos frases sobre qué hace tu herramienta y para qué sirve.
-Por ejemplo: "Una herramienta de código abierto para automatizar la recopilación de información OSINT de redes sociales."
+Explora mi portafolio para adentrarte en el mundo de la ciberseguridad ofensiva. Soy D4rkh45h, un consultor apasionado por el Pentesting y el Hacking Ético. Aquí encontrarás una muestra de mis proyectos y habilidades, donde combino mi formación en sistemas y desarrollo para identificar vulnerabilidades y fortalecer la seguridad. ¡Descubre cómo pongo a prueba las defensas digitales! 
 
 <h2 align="center">Demostración</h2>
 
@@ -26,46 +34,42 @@ Por ejemplo: "Una herramienta de código abierto para automatizar la recopilaci�
 ### GIF de la Herramienta en Funcionamiento
 
 <p align="center">
-  <img src="URL_DE_TU_GIF_AQUI" alt="Demostración en GIF" style="max-width: 100%; height: auto; display: block; margin: 0 auto;">
-  <em>Una rápida demostración del flujo de trabajo principal de la herramienta, mostrando sus características clave.</em>
+  <img src="/assets/img/gif1.gif" alt="Demostración en GIF" style="max-width: 100%; height: auto; display: block; margin: 0 auto;">
+  <em>Una rápida demostración del flujo de del portfolio, mostrando sus características clave.</em>
 </p>
 
 ### Capturas de Pantalla Clave
 
 <p align="center">
-  <img src="URL_DE_TU_FOTO_1_AQUI" alt="Captura de pantalla 1" style="max-width: 100%; height: auto; display: block; margin: 0 auto;">
-  <em>Descripción de lo que se muestra en la primera captura, por ejemplo: "Vista de la interfaz principal con los resultados cargados."</em>
+  <img src="/assets/img/foto1.png" alt="Captura de pantalla 1" style="max-width: 100%; height: auto; display: block; margin: 0 auto;">
+  <em>Página principal del portfolio"</em>
 </p>
 
 <p align="center">
-  <img src="URL_DE_TU_FOTO_2_AQUI" alt="Captura de pantalla 2" style="max-width: 100%; height: auto; display: block; margin: 0 auto;">
-  <em>Descripción de lo que se muestra en la segunda captura, por ejemplo: "Opciones de configuración y personalización."</em>
+  <img src="/assets/img/foto2.png" alt="Captura de pantalla 2" style="max-width: 100%; height: auto; display: block; margin: 0 auto;">
+  <em>Página de los Proyectos del portfolio"</em>
 </p>
 
 <p align="center">
-  <img src="URL_DE_TU_FOTO_3_AQUI" alt="Captura de pantalla 3" style="max-width: 100%; height: auto; display: block; margin: 0 auto;">
-  <em>Descripción de lo que se muestra en la tercera captura, por ejemplo: "Ejemplo de un informe generado por la herramienta."</em>
+  <img src="/assets/img/foto3.png" alt="Captura de pantalla 3" style="max-width: 100%; height: auto; display: block; margin: 0 auto;">
+  <em>Página sobre mí del portfolio"</em>
+</p>
+
+<p align="center">
+  <img src="/assets/img/foto4.png" alt="Captura de pantalla 3" style="max-width: 100%; height: auto; display: block; margin: 0 auto;">
+  <em>Página para contactarme dentro del portfolio"</em>
 </p>
 
 ---
-
-## Características
-
-*   Lista de las funcionalidades principales de tu herramienta.
-*   Sé conciso pero descriptivo.
-*   Ejemplo: Soporte para múltiples plataformas (Linux, Windows, macOS).
-*   Ejemplo: Interfaz de línea de comandos intuitiva.
-*   Ejemplo: Exportación de resultados a diferentes formatos (CSV, JSON).
-
 ## Estructura del Proyecto
 
-Este repositorio contiene la herramienta **CySortify** y sus archivos asociados.
+Este repositorio de mi portfolio
 ```bash
 Herramienta/
-├── archivo
-├── Archivo
-├── Archivo
-└── Archivo
+├── .github
+├── assets
+├── index.html
+└── index.css
 ```
 ---
 
@@ -78,19 +82,3 @@ Aquí encontrarás información más detallada sobre el proyecto:
 *   🔐 [**Seguridad**](.github/SEGURIDAD.md) - Información sobre cómo reportar vulnerabilidades.
 *   ⚠️ [**Aviso Legal**](.github/AVISO_LEGAL.md) - Cláusulas y advertencias legales importantes.
 *   📢 [**Soporte**](.github/SOPORTE.md) - Dónde obtener ayuda o hacer preguntas.
-
----
-
-## Uso
-
-Explica cómo se utiliza tu herramienta. Proporciona ejemplos claros y comandos.
-
-```bash
-# Para ver las opciones disponibles
-python nombre_del_script_principal.py --help
-
-# Un ejemplo de uso básico
-python nombre_del_script_principal.py --objetivo ejemplo.com --modo escaneo_rápido
-
-# Otro ejemplo
-python nombre_del_script_principal.py --entrada lista_dominios.txt --salida resultados.json
